@@ -4,7 +4,8 @@
   "description": "The source code of my chess application \"CheckMate\".",
   "main": "index.js",
   "scripts": {
-    "start": "ts-node --files ./src/index.ts",
+    "start": "set DOTENV_KEY=dotenv://:key_aaed085aef6e55a3ce48cf2e639e3321b85e905681b9fc3efab8c823624c707b@dotenv.org/vault/.env.vault?environment=development && ts-node --files ./src/index.ts",
+    "start:development": "set DOTENV_KEY=dotenv://:key_aaed085aef6e55a3ce48cf2e639e3321b85e905681b9fc3efab8c823624c707b@dotenv.org/vault/.env.vault?environment=development && ts-node --files ./src/index.ts",
     "test": "jest --detectOpenHandles --verbose --coverage"
   },
   "engines": {
